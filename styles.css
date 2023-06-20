@@ -1,45 +1,102 @@
-h1 {
+* {
+    box-sizing: border-box;
+  }
+  
+  .html {
+    font-size: 16px;
+  }
+  
+  .body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+  }
+  
+  .header h1 {
     text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px
   }
   
-  .container {
-    background-color: rgb(255, 255, 255);
-    padding: 10px 0;
+  .p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
   }
   
-  .marker {
-    width: 200px;
-    height: 25px;
-    margin: 10px auto;
+  .divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
   }
   
-  .cap {
-    width: 60px;
-    height: 25px;
+  .bold {
+    font-weight: 800;
   }
   
-  .sleeve {
-    width: 110px;
-    height: 25px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-left: 10px double rgba(0, 0, 0, 0.75);
+  .large {
+    height: 10px;
   }
   
-  .cap, .sleeve {
-    display: inline-block;
+  .large, .medium {
+    background-color: black;
+    border: 0;
   }
   
-  .red {
-    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
-    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+  .medium {
+    height: 5px;
   }
   
-  .green {
-    background: linear-gradient(#55680D, #71F53E, #116C31);
-    box-shadow: 0 0 20px 0 #3B7E20CC;
+  .small-text {
+    font-size: 0.85rem;
   }
   
-  .blue {
-    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-    box-shadow: 0 0 20px 0 blue;
+  
+  .calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .calories-info h2 {
+    margin: 0;
+  }
+  
+  .left-container p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .calories-info span {
+    margin: -7px -2px;
+    font-size: 2.4em;
+    font-weight: 700;
+  }
+  
+  .right {
+    justify-content: flex-end;
+  }
+  
+  .indent {
+    margin-left: 1em;
+  }
+  
+  .double-indent {
+    margin-left: 2em;
+  }
+  
+  .daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+  }
+  
+  .note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding :0 8px;
+    text-indent:-8px;
   }
