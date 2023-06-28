@@ -1,63 +1,45 @@
-lines (60 sloc)  1.03 KB
- 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1 {
+    text-align: center;
   }
-  body {
-    background-color: lightgrey;
-  }
+  
   .container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
   }
-  .container::after{
-    content: "";
-  position: absolute;
-  inset: 0;
-  transform: skewY(10deg);
-  background: linear-gradient(to right, #b92b27, #1565c0);
-  z-index: -1;
-  box-shadow: 0px 0px 10px black ;
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
   }
-  .shoe {
-    width: 85%;
-    height: 75%;
-    padding: 2%;
-    margin: auto;
-    margin-top: 7.5%;
-    box-shadow: 0px 0px 10px black ;
+  
+  .cap {
+    width: 60px;
+    height: 25px;
   }
-  .des {
-    max-width: 40%;
-    color: white;
+  
+  .sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
   }
-  .des > h1 {
-    font-size: xx-large;
-    margin-bottom: 30px;
+  
+  .cap, .sleeve {
+    display: inline-block;
   }
-  .des > p {
-    font-size: large;
-    margin-bottom: 50px;
-    line-height: 20px;
+  
+  .red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
   }
-  .shoe-1 {
-    position: absolute;
-    right: 0px;
-    top: 10%;
-    width: 600px;
-    height: 300px;
+  
+  .green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
   }
-  .shoe-1:hover{
-    right: 0px;
-    top: 15px;
-    width: 900px;
-    height: 600px;
-  }
-  .shoe{
-    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 blue;
   }
